@@ -11,6 +11,7 @@ import Hamburger from "@/assets/icons/hamburger.svg";
 import Image from "next/image";
 import Logo from "@/assets/icons/logo.svg";
 import Button from "./Button";
+import Link from "next/link";
 
 function MobileNavLan({ className }: { className: string }) {
   return (
@@ -47,14 +48,18 @@ function MobileNavLan({ className }: { className: string }) {
                     <p>🇨🇿</p>
                     <p>EN</p>
                   </div>
-                  <Button
-                    title="Register"
-                    className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
-                  />
-                  <Button
-                    title="Login"
-                    className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
-                  />
+                  <Link href="/sign-up">
+                    <Button
+                      title="Register"
+                      className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
+                    />
+                  </Link>
+                  <Link href="/sign-in">
+                    <Button
+                      title="Login"
+                      className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
+                    />
+                  </Link>
                 </SheetHeader>
               </SheetContent>
             </Sheet>
