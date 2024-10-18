@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import BankInfo from "./BankInfo";
 import mastercard from "@/assets/icons/mastercard.svg";
 import Image from "next/image";
 import ChartSec from "@/components/ui/ChartSec";
@@ -18,7 +17,7 @@ function ResentTransations() {
       <Tabs className="container mx-auto w-full">
         <div className="grid grid-cols-12 gap-1">
           <div className="col-span-12 md:col-span-6 w-[80%]">
-            <ChartSec accounts={[]} />{" "}
+            <ChartSec />{" "}
           </div>
           <div className="col-span-12 md:col-span-6">
             <p className="pl-[15px]">Resent Transactions</p>

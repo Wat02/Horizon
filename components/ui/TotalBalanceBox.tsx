@@ -6,7 +6,7 @@ const TotalBalanceBox = () => {
   return (
     <section className="total-balance">
       <div className="total-balance-chart">
-        <DoughnutChart accounts={[]} />
+        <DoughnutChart />
       </div>
 
       <div className="flex flex-col gap-6">
