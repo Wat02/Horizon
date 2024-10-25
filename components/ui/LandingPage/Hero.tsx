@@ -285,7 +285,9 @@ function Hero() {
             </div>
           </div>
           <div className="col-span-12 md:col-span-4 flex flex-wrap-row pt-[80px] text-center justify-center">
-            <span className="mr-[20px] text-[50px]">🏡</span>
+            <span className="mr-[20px] pt-[10px] md:pt-[0] text-[50px]">
+              🏡
+            </span>
             <p className="text-start text-[16px] font-semibold leading-[24px] pt-[13px]">
               Horizon is regulated by the{" "}
               <span className="text-[#163300] underline underline-offset-4">
@@ -295,14 +297,18 @@ function Hero() {
             </p>
           </div>
           <div className="col-span-12 md:col-span-4 flex flex-wrap-row pt-[80px] text-center justify-center">
-            <span className="mr-[20px] text-[50px]">👨‍👩‍👧‍👦</span>
+            <span className="mr-[20px]  pt-[10px] md:pt-[0] text-[50px]">
+              👨‍👩‍👧‍👦
+            </span>
             <p className="text-start text-[16px] font-semibold leading-[24px] pt-[13px]">
               10m customers move £30bn with Horizon <br />
               every quarter
             </p>
           </div>
           <div className="col-span-12 md:col-span-4 flex flex-wrap-row pt-[80px] text-center justify-center">
-            <span className="mr-[20px] text-[50px]">⭐️</span>
+            <span className="mr-[20px]  pt-[10px] md:pt-[0] text-[50px]">
+              ⭐️
+            </span>
             <p className="text-start text-[16px] font-semibold leading-[24px] pt-[13px]">
               Our average score on{" "}
               <span className="text-[#163300] underline underline-offset-4">

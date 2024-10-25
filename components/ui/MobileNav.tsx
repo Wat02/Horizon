@@ -11,6 +11,7 @@ import Hamburger from "@/assets/icons/hamburger.svg";
 import Image from "next/image";
 import Logo from "@/assets/icons/logo.svg";
 import Button from "./LandingPage/Button";
+import Link from "next/link";
 
 function MobileNavLan({ className }: { className: string }) {
   return (
@@ -29,32 +30,31 @@ function MobileNavLan({ className }: { className: string }) {
               </SheetTrigger>
               <SheetContent className="bg-[#FFFFFF]">
                 <SheetHeader>
-                  <Image src={Logo} width={40} height={40} alt="logo" />
-                  <SheetTitle className="text-left pt-[10px]">
+                  <Link href="/">
+                    <Image src={Logo} width={40} height={40} alt="logo" />
+                  </Link>
+                  <SheetTitle className="text-left pt-[10px] font-bold">
                     Horizon
                   </SheetTitle>
                   <p className="text-left pt-[10px] text-[18px] font-medium">
-                    Features
+                    🏠 Home
                   </p>
                   <p className="text-left pt-[10px] text-[18px] font-medium">
-                    Pricing
+                    🏦 My Banks
                   </p>
                   <p className="text-left pt-[10px] text-[18px] font-medium">
-                    Help
+                    📚 Transaction History
                   </p>
-                  <div className="flex flex-row gap-40 pt-[20px]">
-                    {" "}
-                    <p>🇨🇿</p>
-                    <p>EN</p>
-                  </div>
-                  <Button
-                    title="Register"
-                    className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
-                  />
-                  <Button
-                    title="Login"
-                    className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
-                  />
+                  <p className="text-left pt-[10px] text-[18px] font-medium">
+                    📝 Transfer Funds
+                  </p>
+
+                  <Link href="/">
+                    <Button
+                      title="Login Out"
+                      className="pt-[10px] pb-[10px] pl-[30px] pr-[30px] bg-[#9FE870] rounded-[20px] text-[16ox] leading-[24px] font-semibold text-[#163300] w-full"
+                    />
+                  </Link>
                 </SheetHeader>
               </SheetContent>
             </Sheet>

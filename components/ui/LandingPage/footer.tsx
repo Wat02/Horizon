@@ -5,7 +5,7 @@ import Logo from "@/assets/icons/logo.svg";
 
 function Fotter() {
   return (
-    <section className="bg-[#ECEFEC]">
+    <section className="bg-[#ECEFEC] pb-[100px]">
       <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-1">
           <div className="col-span-12">
